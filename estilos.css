@@ -1,0 +1,180 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top,rgba(0,163,186,255), rgba(0,164,187,255),rgba(32,101,124,255), rgba(5,40,72,255),   black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja{
+    transform: scale(0.4);
+    position: relative;
+    height: 130px;
+    width: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: radial-gradient(rgba(255, 255, 255, 0.726), rgb(125, 189, 211));
+    border-radius: 70%;
+    box-shadow: 0 0 5px 3px lightblue;
+    animation: blow 1s alternate infinite;
+}
+.dos{
+    transform: scale(0.2);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.tres{
+    transform: scale(0.15);
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.cuatro{
+    transform: scale(0.3);
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+.cinco{
+    transform: scale(0.3);
+    position: absolute;
+    top: 75%;
+    left: 75%;
+}
+.seis{
+    transform: scale(0.2);
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.siete{
+    transform: scale(0.4);
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.ocho{
+        transform: scale(0.2);
+        position: absolute;
+        top: 3%;
+        left: 60%;
+}
+
+.caja::after{
+    background: radial-gradient(rgba(255, 255, 255, 0.678), rgba(126, 174, 190, 0.795));
+    content:"";
+    display: block;
+    box-shadow: 0 0 4px 2px lightblue;
+    position: relative;
+    top: 50%;
+    left: -600%;
+    z-index: -1;
+    border-radius: 60%;
+    height: 2px;
+    width: 50px;   
+    animation: blow 1s alternate infinite;
+}
+.caja::before{
+    background: radial-gradient(rgb(255, 255, 255), rgb(183, 216, 228));
+    content:"";
+    display: block;
+    box-shadow: 0 0 4px 5px lightblue,
+                0 0 6px 15px rgba(131, 159, 168, 0.521);
+    position: absolute;
+    top: 50%;
+    left: -80%;
+    transform: translateY(-50%);
+    border-radius: 60%;
+    height: 15px;
+    width: 11px;   
+    animation: blow2 1s alternate infinite;
+}
+
+
+.punto{
+    background-color: lightblue;
+    border-radius: 50%;
+    transform: scale(0.2);
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        animation: none;
+    height: 15px;
+    width: 15px;
+    box-shadow: 0 0 6px 2px white,
+                200px 500px 10px 2px white,
+                -300px 500px 10px 2px white,
+                200px -600px 10px 2px white,
+                -100px -300px 10px 2px white,
+                600px 800px 10px 2px white,
+                400px -100px 10px 2px white ;
+    animation: blow3 1s alternate infinite;
+}
+.doss{
+    position: absolute;
+        top: 50%;
+        left: 20%;
+}
+.tress{
+    position: absolute;
+        top: 70%;
+        left: 60%;
+}
+.cuatroo{
+    position: absolute;
+        top: 20%;
+        left: 80%;
+}
+.cincoo{
+    position: absolute;
+        top: 20%;
+        left: 10%;
+}
+.seiss{
+    position: absolute;
+        top: 70%;
+        left: 90%;
+}
+
+
+@keyframes blow {
+    0%{
+        box-shadow: 0 0 4px 2px lightblue;
+    }
+    100%{
+        box-shadow: 0 0 6px 6px lightblue;
+    }
+}
+@keyframes blow2 {
+    0%{
+        box-shadow: 0 0 4px 5px lightblue,
+                0 0 6px 10px rgba(242, 252, 255, 0.856);
+    }
+    100%{
+        box-shadow: 0 0 4px 5px lightblue,
+                0 0 8px 20px rgba(242, 252, 255, 0.575);
+    }
+}
+@keyframes blow3 {
+    0%{
+        box-shadow: 0 0 6px 2px white,
+        200px 500px 10px 2px white,
+        -300px 500px 10px 2px white,
+        200px -600px 10px 2px white,
+        -100px -300px 10px 2px white,
+        600px 800px 10px 2px white,
+        400px -100px 10px 2px white ;
+    }
+    100%{
+        box-shadow: 0 0 6px 8px white,
+        200px 500px 15px 8px white,
+        -300px 500px 15px 8px white,
+        200px -600px 15px 8px white,
+        -100px -300px 15px 8px white,
+        600px 800px 15px 8px white,
+        400px -100px 15px 8px white ;
+    }
+    
+}
